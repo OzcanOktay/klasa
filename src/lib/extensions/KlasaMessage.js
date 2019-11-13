@@ -245,6 +245,9 @@ module.exports = Structures.extend('Message', Message => {
 		send(content, options) {
 			return this.sendMessage(content, options);
 		}
+		say(content, options) {
+			return this.sendMessage(content, options);
+		}
 
 		/**
 		 * Sends a message that will be editable via command editing (if nothing is attached)
